@@ -3,7 +3,9 @@ const { clear } = require('console');
 const { json } = require('express');
 const express=require('express');
 const app=express();
+//puerto
 const port=process.env.PORT || 3000
+//
 app.listen(port,()=>{
     console.log("Server corriendo en el puerto 3000");
 })
