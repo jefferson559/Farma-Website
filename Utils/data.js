@@ -15,7 +15,7 @@ const getBanners = (callback) => {
     });
 }
 const getAllProducts = (callback) => {
-    request('https://api-farma.herokuapp.com//products', (error, res, body) => {
+    request('https://api-farma.herokuapp.com/products', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
