@@ -3,8 +3,8 @@ const { clear } = require('console');
 const { json } = require('express');
 const express=require('express');
 const app=express();
-
-app.listen(3000,()=>{
+const port=process.env.PORT || 3000
+app.listen(port,()=>{
     console.log("Server corriendo en el puerto 3000");
 })
 //Requerimos el paquete path
