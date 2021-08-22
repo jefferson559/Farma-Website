@@ -3,7 +3,7 @@ const { clear } = require('console');
 const { json } = require('express');
 const express=require('express');
 const app=express();
-//puerto
+//puerto 3000
 const port=process.env.PORT || 3000
 //
 app.listen(port,()=>{
