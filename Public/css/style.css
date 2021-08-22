@@ -1,0 +1,182 @@
+.body{
+    margin:0px;
+}
+ 
+/*Clases del nav*/
+.navbar-brand{
+    margin-right: 5px
+}
+.head-img {
+    max-width: 50px;
+}
+  
+ 
+ h2.font{
+    font-family:'Roboto',sans-serif;
+}
+ 
+ .navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    font-family:'Anton', serif;;
+    font-size: 15px;
+ }
+ .font-head{
+     font-weight: bold;
+     font-family:'Ubuntu', serif;;
+ }
+
+.bg-grad{   
+    background: linear-gradient(90deg, rgba(182,254,199,1) 42%, rgba(156,170,255,1) 63%);
+}
+/*clases de los botones del nav*/
+ .menu
+ {
+    /* clear:both;
+    float:left; */
+    margin-top:1px;
+    padding-bottom:1px; 
+}
+ 
+.menu li
+ {
+    display: inline-block;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-right: 30px;
+}
+.menu li a:hover
+ 
+ {
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+}
+.menu li:hover
+ 
+ {
+     
+    border-radius: 10px;
+    background-color: #009caaab;
+     
+}
+.card{
+  border: 2px solid rgba(99, 98, 98, 0.1);
+  border-radius: 30px 30px 30px 30px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+   
+}
+.card-body h5::first-letter
+ 
+,.card-body p::first-letter
+{
+    text-transform: uppercase;
+}
+
+.card-body h5 
+ 
+,.card-body p 
+{
+    text-transform: lowercase;
+}
+.btn{
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    background-color: #549E6D;
+}
+  /* .menu li a
+ 
+ {
+    color:#FFFFFF;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7em 1em 0.7em 1em;
+}   */
+
+.menu li.active a
+ 
+ {
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu li.active
+{
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    background-color:  #009caaab; 
+}  
+
+
+
+@media (max-width: 768px) {
+  
+   .menu li a:hover
+    {
+        color:#FFFFFF;
+        text-transform:initial;
+        text-decoration: none;
+  
+    }
+    .menu li:hover{background-color: #009caaab;}
+    .menu   {max-width: 100%;}
+    .menu li{ margin-right:55% ;}
+}
+
+
+@media (max-width:1300px) {
+  
+    .navbar-light .navbar-nav .nav-link {
+         
+        font-size: 12px;
+        clear:both;
+        float:left;
+     }
+ }
+
+.separator{
+    background: linear-gradient(90deg, rgba(156,170,255,1) 41%, rgba(182,254,199,1) 57%);
+    padding: 5px;    
+}
+.separator2{
+    background: linear-gradient(90deg, rgba(156,170,255,1) 41%, rgba(182,254,199,1) 57%);
+    padding: 2px;    
+}
+ /* Css Carousel */
+  
+  
+  .carousel-indicators{
+      margin-bottom: 0px;
+  }
+/**/
+.sec-products{
+  padding-top: 15px;
+}
+
+.cardW{
+    width: 18rem;
+}
+ 
+.logoEstrella{
+    width: 50px;
+    margin-top: 1.2%;
+}
+.logoEstrella img{
+    max-width: 100%;
+    
+}
+/**/
+  /*Css cards*/
+.tamanoImg{
+    width: 170px;
+}
+
+div.tachado{
+text-decoration: line-through;
+}
