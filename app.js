@@ -17,7 +17,7 @@ app.set('view engine','ejs') //defino el engine de vista
 /////////donde express debe usar los archivos estaticos
 app.use(express.static(path.join(__dirname, 'public')));
 //////
-const data = require('../utils/data')
+const data = require('./Utils/data.js')
 //.render renderisa la pagina que le enviemos en el path indicado en get
  
 var list = [];   
