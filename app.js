@@ -31,12 +31,17 @@ app.get('/',
                         })
                     }       
                     const JSONBanner = await JSON.parse(data);
+                 //   clear()
+                  //   console.log("productosBanner")
+                   //  console.log(JSONBanner)
                    list.push({
                         title:'FarmaHelp',
                         path:"Index",                      
                         JSONBanner
                     })                   
                 })  
+
+
                 data.getAllProducts(async (error, data)=>{
                     if(error)
                     {
@@ -89,9 +94,7 @@ app.get('/',
                         }                     
                         
                     })
-                     clear()
-                     console.log("productosactual")
-                     console.log(JSONProducts)
+                     
                     list.push({                                         
                         JSONOfertaMatrix
                     })   
