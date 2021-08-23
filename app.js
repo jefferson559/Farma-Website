@@ -12,10 +12,10 @@ app.listen(port,()=>{
 //Requerimos el paquete path
 const path=require('path');
 //Utilizamos el paquete path y decimos dónde van a estar las views
-app.set('views',path.join(__dirname,'views'))//defino el path de las vistas
+app.set('views',path.join(__dirname,'Views'))//defino el path de las vistas
 app.set('view engine','ejs') //defino el engine de vista
 /////////donde express debe usar los archivos estaticos
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 //////
 const data = require('./Utils/data.js')
 //.render renderisa la pagina que le enviemos en el path indicado en get
