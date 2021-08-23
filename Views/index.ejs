@@ -52,7 +52,7 @@
     <main>
       <section class="sec-products">
          <div class="container ">
-             <div class="row ">
+             <div class="row justify-content-evenly">
                <div class="d-flex flex-row">
                  <h2 class=" products font pt-4">Productos Destacados </h2>
                  <div class="logoEstrella"><img src="img/star.jpg"  alt="estrella"></div>      
@@ -100,8 +100,7 @@
               <%}%> 
                 <div class="d-flex justify-content-evenly m-0 p-0">    
               <% list.forEach((product,index)=>{ %>
-                
-                                                                                       
+                                                                                              
                       <div class="card cardW"  >
                         <img src="img/imgProductos/<%= product.source%>" class="card-img-top tamanoImg mx-auto" alt="<%=product.alt%>" >
                         <div class="card-body">
