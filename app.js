@@ -69,32 +69,30 @@ app.get('/',
                     var JSONOfertaMatrix=[]
                     var cont=0;
                     JSONProOferta.forEach((n,i,array) =>{ 
-                        if(array.length<=3){
+                        if(array.length<=2){
                             auxList.push(n)
                             JSONOfertaMatrix.push(auxList)
                           
                         }else{
+                            auxList.push(n)  
+                            if((array.length-1)==i){                                                                 
+                                JSONOfertaMatrix.push([...auxList])                                
+                            }
+                            else{
+                                if(auxList.length==2){                                                                           
+                                    JSONOfertaMatrix.push([...auxList])   
+                                    auxList=[] 
+                                    
+                               }
+                            }
                                
-                            if((array.length-1)==i){
-                                auxList.push(n)
-                                JSONOfertaMatrix.push([...auxList])  
-                                
-                            }
-                            
-                            if(auxList.length==3){                                                                           
-                                 JSONOfertaMatrix.push([...auxList])   
-                                 auxList=[] 
-                                 
-                            }
-                          
-                                auxList.push(n)
                            
                           
                             
                         }                     
                         
                     })
-                     
+                    console.log(JSONOfertaMatrix)
                     list.push({                                         
                         JSONOfertaMatrix
                     })   
